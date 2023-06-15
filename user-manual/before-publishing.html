@@ -24,7 +24,9 @@
         <script src="../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Publishing" href="publishing.html" />
+    <link rel="prev" title="Introduction" href="../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -50,9 +52,15 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Before publishing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-gisquick-account">Creating Gisquick account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-gisquick-plugin">Downloading Gisquick plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preparation-in-qgis">Preparation in QGIS</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="publishing.html">Publishing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="releasing-project.html">Releasing project - z teto kapitoly udelat kapitolu Setting up the project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releasing-project.html">Releasing project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-interface.html">User interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html">Sample datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="other.html">Other</a></li>
@@ -91,7 +99,7 @@ server (for example on Gisquick demo publication server as it is described below
 This can be done by filling in the registration form available
 at <a class="reference external" href="https://demo.gisquick.org/">https://demo.gisquick.org/</a>.</p>
 <a class=""
-               data-lightbox="group-f8e1cac4-8a99-4762-abcb-c6bfdc3daac1"
+               data-lightbox="group-c996b06a-9bca-43f6-80ae-d8242798332d"
                href="../_images/gisquick-new-account-01.png"
                title="Registration form for creating a new user account."
                data-title="Registration form for creating a new user account."
@@ -104,7 +112,7 @@ at <a class="reference external" href="https://demo.gisquick.org/">https://demo.
                 </a><p>After pressing <code class="docutils literal notranslate"><span class="pre">CREATE</span> <span class="pre">ACCOUNT</span></code> button a confirmation e-mail should
 be sent to a given e-mail address.</p>
 <a class=""
-               data-lightbox="group-d72ddbaf-9cf4-40b4-b101-291a6a65cb9b"
+               data-lightbox="group-05210cd7-204a-4aa2-a6b9-ec3543d04955"
                href="../_images/gisquick-new-account-11.png"
                title="Completion of registration process will be done by pressing
 ACTIVATE ACCOUNT button."
@@ -118,7 +126,7 @@ ACTIVATE ACCOUNT button."
                      alt=""/>
                 </a><p>Afterwards, a new user is notified about successful signing-in.</p>
 <a class=""
-               data-lightbox="group-17328799-dee2-46ad-b2f2-a8909c9c26aa"
+               data-lightbox="group-689e7c45-b161-4561-9484-33e275e311aa"
                href="../_images/gisquick-new-account-21.png"
                title="A new user account has been successfully created."
                data-title="A new user account has been successfully created."
@@ -131,7 +139,7 @@ ACTIVATE ACCOUNT button."
                 </a><p>After clicking on <code class="docutils literal notranslate"><span class="pre">CONTINUE</span></code> button, the new user will be redirected to
 the publication server welcome screen.</p>
 <a class=""
-               data-lightbox="group-4e905fec-82d8-4ec2-b6d4-af7ddbcd2703"
+               data-lightbox="group-b5cae0ef-cbe5-4e68-af4c-9ff4a05eb07a"
                href="../_images/gisquick-new-account-31.png"
                title="Gisquick login screen."
                data-title="Gisquick login screen."
@@ -141,22 +149,12 @@ the publication server welcome screen.</p>
                      width="300px"
                      height="auto"
                      alt=""/>
-                </a><p>The user can log in using credentials (user name and password). After successful
-login, Gisquick loads user’s welcome page which includes a list of already
+                </a><p>The user can log in with user name and password. After successful
+login, Gisquick loads user’s profile page which includes a list of already
 published projects. After the very first login or in case that user hasn’t
 published any project yet, only the message appears stating how to proceed.</p>
-<a class=""
-               data-lightbox="group-0824087e-d348-4cab-ab69-b5d3f41e5fae"
-               href="../_images/gisquick-new-account-41.png"
-               title="User's welcome page after first login."
-               data-title="User's welcome page after first login."
-               
-               ><img src="../_images/gisquick-new-account-41.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a></section>
+<p>In order to publish a <code class="docutils literal notranslate"><span class="pre">NEW</span> <span class="pre">PROJECT</span></code> from QGIS, a QGIS Gisquick plugin must be connected, see chapter below.</p>
+</section>
 <section id="downloading-gisquick-plugin">
 <span id="uploading-project"></span><h2>Downloading Gisquick plugin<a class="headerlink" href="#downloading-gisquick-plugin" title="Permalink to this heading">¶</a></h2>
 </section>
@@ -169,7 +167,10 @@ published any project yet, only the message appears stating how to proceed.</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="publishing.html" class="btn btn-neutral float-right" title="Publishing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

@@ -55,9 +55,9 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="before-publishing.html">Before publishing</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Publishing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#edit-publishing">EDIT Publishing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#uploading-project">Uploading project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#releasing-project">Releasing project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Uploading project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#publishing-project">Publishing project</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="releasing-project.html">Releasing project</a></li>
@@ -92,63 +92,12 @@
              
   <section id="publishing">
 <span id="id1"></span><h1>Publishing<a class="headerlink" href="#publishing" title="Permalink to this heading">¶</a></h1>
-<section id="edit-publishing">
-<span id="preparing-project"></span><h2>EDIT Publishing<a class="headerlink" href="#edit-publishing" title="Permalink to this heading">¶</a></h2>
-<p>EDIT - tato cast nebude v teto kapitalo Publishing, ale v Before publishing
-Firstly, click on <code class="docutils literal notranslate"><span class="pre">Publish</span></code> button which is situated next to the
-<code class="docutils literal notranslate"><span class="pre">Upload</span></code> button in the user’s project page. It allows publishing a project
-directly from QGIS.</p>
-<a class=""
-               data-lightbox="group-b0789382-f655-4912-9c83-9161c60467d2"
-               href="../_images/publish-button-11.png"
-               title="Placement of publish button."
-               data-title="Placement of publish button."
-               
-               ><img src="../_images/publish-button-11.png"
-                     class=""
-                     width="300px"
-                     height="auto"
-                     alt=""/>
-                </a><a class=""
-               data-lightbox="group-99e34007-7b70-4613-99a1-8bdca317fc55"
-               href="../_images/publish-button-21.png"
-               title="Where to download plugin for direct publishing from QGIS."
-               data-title="Where to download plugin for direct publishing from QGIS."
-               
-               ><img src="../_images/publish-button-21.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><p>Once the download is complete, open QGIS and find tab <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> and
-choose <code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">and</span> <span class="pre">install</span> <span class="pre">plugins</span></code>. Continue to the <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">from</span>
-<span class="pre">zip</span></code> tab, set path to the downloaded zip file and hit the install button.</p>
-<a class=""
-               data-lightbox="group-1a07acff-efde-4d37-9cd0-573c8660bcb0"
-               href="../_images/publish-button-31.png"
-               title="How to proceed in QGIS to install the experimental plugin."
-               data-title="How to proceed in QGIS to install the experimental plugin."
-               
-               ><img src="../_images/publish-button-31.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><p>When the installation is finished, it is possible to check new acquisition
-in the list of installed plugins. Also, a new icon appears in QGIS toolbar.
-Next step is to prepare the project in QGIS.</p>
-<a class=""
-               data-lightbox="group-374c270a-2a10-4a8f-8f55-a6219451e61a"
-               href="../_images/publish-button-41.png"
-               title="List of installed plugins."
-               data-title="List of installed plugins."
-               
-               ><img src="../_images/publish-button-41.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><p>Save the project before the next step.</p>
+<p id="preparing-project">This section describes the proccess of uploading and publishing QGIS project to Gisquick. It is assumed that
+QGIS Gisquick plugin is installed, connected to Gisquick server (see <span class="xref std std-doc">Before publishing</span>) and
+project is prepared and ready to be published.</p>
+<section id="uploading-project">
+<h2>Uploading project<a class="headerlink" href="#uploading-project" title="Permalink to this heading">¶</a></h2>
+<p>Save the project before the next step.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><a class="reference internal" href="../_images/important.png"><img alt="imp" src="../_images/important.png" style="width: 1.5em;" /></a> When using flat files or file-based databases as
@@ -161,7 +110,7 @@ must be ensured that the server used for publishing will have access
 rights to such data sources.</p>
 </div>
 <a class=""
-               data-lightbox="group-a1f8b01c-0dd3-4bc8-8d0c-ea4af6ebfa40"
+               data-lightbox="group-14a4d1d6-b504-4472-bce8-b4e126ea7bb6"
                href="../_images/different-folders-error1.png"
                title="Error warning when different source paths are used."
                data-title="Error warning when different source paths are used."
@@ -172,8 +121,8 @@ rights to such data sources.</p>
                      height="auto"
                      alt=""/>
                 </a></section>
-<section id="uploading-project">
-<span id="id2"></span><h2>Uploading project<a class="headerlink" href="#uploading-project" title="Permalink to this heading">¶</a></h2>
+<section id="id2">
+<span id="id3"></span><h2>Uploading project<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>toto bude prvni cast v teto kapitole Publishing + neni nutne opakovat connection to server</p></li>
 </ul>
@@ -181,7 +130,7 @@ rights to such data sources.</p>
 For the very first time, Gisquick asks the user to fill in the connection
 and Gisquick login details.</p>
 <a class=""
-               data-lightbox="group-1d9dfe9e-3b2e-4d91-bfe3-3caa4bb41ad5"
+               data-lightbox="group-2195b5c7-af01-4716-b4bf-af2f5df17cf1"
                href="../_images/publish-button-51.png"
                title="Example of filled connection and login details."
                data-title="Example of filled connection and login details."
@@ -196,7 +145,7 @@ in user’s experimental publish window. Notice, that the Gisquick 2
 icon stays active in QGIS until the user clicks on it again and interrupts the
 connection with the server.</p>
 <a class=""
-               data-lightbox="group-92d207eb-4e07-41f5-a94b-b302c906efca"
+               data-lightbox="group-758e9dec-ac67-4181-bb92-2357dce0e95a"
                href="../_images/publish-button-61.png"
                title="Successful check-in to the Gisquick server and loaded sample project."
                data-title="Successful check-in to the Gisquick server and loaded sample project."
@@ -217,7 +166,7 @@ Second tab <code class="docutils literal notranslate"><span class="pre">Layers</
 Two windows will split the screen: local project files are listed in the left,
 intended server folder appears in the right one. Click on <code class="docutils literal notranslate"><span class="pre">UPLOAD</span> <span class="pre">FILES</span></code> button.</p>
 <a class=""
-               data-lightbox="group-62ae7be2-b355-41b6-bf4d-6cda39b3b1b5"
+               data-lightbox="group-bf820687-6820-4216-b397-a460c163f7a8"
                href="../_images/publish-button-71.png"
                title="Upload section displays local files and intended server folder."
                data-title="Upload section displays local files and intended server folder."
@@ -227,10 +176,10 @@ intended server folder appears in the right one. Click on <code class="docutils 
                      width="100%"
                      height="auto"
                      alt=""/>
-                </a><p id="preparation-in-qgis">↓ ZKOPIROVANO Z RELEASING-PROJECT - toto bude druha cast teto kapitoly Publishing</p>
-</section>
-<section id="releasing-project">
-<span id="id3"></span><h2>Releasing project<a class="headerlink" href="#releasing-project" title="Permalink to this heading">¶</a></h2>
+                </a></section>
+<section id="publishing-project">
+<span id="releasing-project"></span><span id="preparation-in-qgis"></span><h2>Publishing project<a class="headerlink" href="#publishing-project" title="Permalink to this heading">¶</a></h2>
+<p>– popsat, ze podrobne nastaveni vseho, co lze udelat pred (i po) Publish, je popsano v dalsi sekci</p>
 <p>This chapter follows up on chapter <a class="reference internal" href="../index.html#chapter-2"><span class="std std-ref">2. Publishing</span></a> and represents last steps of project publishing.</p>
 <p>A section called <code class="docutils literal notranslate"><span class="pre">SETTINGS</span></code> is displayed. There are a few
 options in the settings window. It is possible to load map canvas using the
@@ -244,8 +193,9 @@ manually by drawing a delimiting rectangle area ina  map. The last option is to
 use the extent of one imported layer or extent of all of them.
 Setting map scales is possible in the left box (<code class="docutils literal notranslate"><span class="pre">8</span></code>). Executed changes are
 reflected in map preview (<code class="docutils literal notranslate"><span class="pre">9</span></code>).</p>
+<p>all possible project settings/possibilities are described further in chapetr??</p>
 <a class=""
-               data-lightbox="group-a09afc3d-f4a9-445f-a8b7-b96084178adf"
+               data-lightbox="group-e031e283-05ac-426b-b3f8-956ddf6c0bb6"
                href="../_images/ui-project-setting1.png"
                title="Project setting."
                data-title="Project setting."
@@ -256,7 +206,7 @@ reflected in map preview (<code class="docutils literal notranslate"><span class
                      height="auto"
                      alt=""/>
                 </a><a class=""
-               data-lightbox="group-ea5ba581-0063-4825-b1b3-6d44bc88e304"
+               data-lightbox="group-7bbbd5dc-d247-4c9d-b85a-70b275f4633a"
                href="../_images/ui-extent-setting1.png"
                title="Couple of ways how to set map extent."
                data-title="Couple of ways how to set map extent."
@@ -271,7 +221,7 @@ can be chosen in the left box (a blank base map is default). Within the right
 box, it is possible to specify which layers will be published or hidden (or both
 which means that the layer will be published but turned off when the project is opened).</p>
 <a class=""
-               data-lightbox="group-85753317-7f07-40fa-b3a5-e1d23f186b9a"
+               data-lightbox="group-0b134ff6-7571-4fa5-ba31-32cebdd9f466"
                href="../_images/ui-layers-setting1.png"
                title="Layers setting."
                data-title="Layers setting."
@@ -284,7 +234,7 @@ which means that the layer will be published but turned off when the project is 
                 </a><p>The last subsection is dedicated to topics. Creating or removing a topic is enabled.
 Select a topic to see involved features which can be subsequently modified.</p>
 <a class=""
-               data-lightbox="group-be64f476-7f7a-4c29-b0c7-ad76f6f48ed5"
+               data-lightbox="group-cacce73e-7e53-4748-b203-60232947e363"
                href="../_images/ui-topics-setting1.png"
                title="Subsection Topics. Add and remove button are highlighted in red square."
                data-title="Subsection Topics. Add and remove button are highlighted in red square."
@@ -296,7 +246,7 @@ Select a topic to see involved features which can be subsequently modified.</p>
                      alt=""/>
                 </a><p>In the very last step, hit the update button to save all realized changes and finish the publishing process.</p>
 <a class=""
-               data-lightbox="group-860461b6-7494-47fc-9ec2-f27724ad3b86"
+               data-lightbox="group-460f5baa-0bf5-4b8a-9f5f-ce9fa661303c"
                href="../_images/ui-update1.png"
                title="Update button is highlighted in red square."
                data-title="Update button is highlighted in red square."

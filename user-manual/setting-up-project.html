@@ -58,7 +58,10 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up the project</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#general">General</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#files">Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#map">Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#map">Map</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#extent">Extent</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#layers">Layers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#topics">Topics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#permissions">Permissions</a></li>
@@ -97,23 +100,83 @@
   <section id="setting-up-the-project">
 <span id="setting-up-project"></span><h1>Setting up the project<a class="headerlink" href="#setting-up-the-project" title="Permalink to this heading">¶</a></h1>
 <p>This part of the documentation describes the process of setting up a project in the Gisquick web interface.
-The procedure consists of a total of seven following steps/sections, <strong>General</strong>, <strong>Files</strong>, <strong>Map</strong>, <strong>Layers</strong>,
-<strong>Topics</strong>, <strong>Permissions</strong> and <strong>Update</strong>. Appropriate project settings greatly affect
-the appearance and functionality of the resulting web map.</p>
+The procedure consists of a total of seven following steps/sections, <a class="reference internal" href="#general"><span class="std std-ref">General</span></a>, <a class="reference internal" href="#files"><span class="std std-ref">Files</span></a>,
+<a class="reference internal" href="#map"><span class="std std-ref">Map</span></a>, <a class="reference internal" href="#layers"><span class="std std-ref">Layers</span></a>, <a class="reference internal" href="#topics"><span class="std std-ref">Topics</span></a>, <a class="reference internal" href="#permissions"><span class="std std-ref">Permissions</span></a> and
+<a class="reference internal" href="#update"><span class="std std-ref">Update</span></a>. Appropriate project settings greatly affect the appearance and functionality of the resulting web map.</p>
 <p>Before the actual setup, it is necessary to have the QGIS project uploaded to the Gisquick server,
 for more information check <a class="reference internal" href="before-publishing.html#before-publishing"><span class="std std-ref">Before publishing</span></a> and <a class="reference internal" href="publishing.html#publishing"><span class="std std-ref">Publishing</span></a>.</p>
+<p>How to access project settings check <a class="reference internal" href="user-interface.html#profile-page"><span class="std std-ref">Profile page</span></a>.</p>
 <hr class="docutils" />
 <section id="general">
 <span id="id1"></span><h2>General<a class="headerlink" href="#general" title="Permalink to this heading">¶</a></h2>
-<hr class="docutils" />
+<p>In the <strong>General</strong> section, the user can check summary information about the project. These are list of layers,
+their queryability, CRS, provider, source or information regarding WFS.</p>
+<a class=""
+               data-lightbox="group-bbaa5960-77d9-4811-b86e-1f046be838d9"
+               href="../_images/general1.png"
+               title=""
+               data-title=""
+               
+               ><img src="../_images/general1.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><hr class="docutils" />
 </section>
 <section id="files">
 <span id="id2"></span><h2>Files<a class="headerlink" href="#files" title="Permalink to this heading">¶</a></h2>
-<hr class="docutils" />
+<p>The user is able to view all files uploaded to the server within the project in the <strong>Files</strong> section.
+Using the right-click on specific file, it is possible to download it, save the link or delete it.</p>
+<a class=""
+               data-lightbox="group-98df4f4e-6e00-4fd9-b4cb-9f38446aa164"
+               href="../_images/files1.png"
+               title=""
+               data-title=""
+               
+               ><img src="../_images/files1.png"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><hr class="docutils" />
 </section>
 <section id="map">
 <span id="id3"></span><h2>Map<a class="headerlink" href="#map" title="Permalink to this heading">¶</a></h2>
-<hr class="docutils" />
+<p>In the <strong>Map</strong> section, user defines <strong>scale</strong> for each zoom depth, <strong>extent</strong> and <strong>thumbnail</strong>.</p>
+<p><strong>Scales</strong> settings enables to define depths of zoom. By clicking on ADD button, user adds new scale, with REMOVE button
+marked scale will be removed. Double-click on particular scale allows to redefine it.</p>
+<a class=""
+               data-lightbox="group-58b2d919-e19c-4ad0-832e-84b5dc323a78"
+               href="../_images/map-scales1.png"
+               title=""
+               data-title=""
+               
+               ><img src="../_images/map-scales1.png"
+                     class=""
+                     width="220px"
+                     height="auto"
+                     alt=""/>
+                </a><p><strong>Extent</strong> can be defined in three ways:</p>
+<ul class="simple">
+<li><p>by entering values of x-min, y-min, x-max and y-max</p></li>
+<li><p>by moving extent boundary while holding <strong>Shift</strong> key (accessed by <a class="reference internal" href="../_images/extent-mod.png"><img alt="extent-mod" src="../_images/extent-mod.png" style="width: 2em;" /></a>)</p></li>
+<li><p>by taking over from defined layer (accessed by <a class="reference internal" href="../_images/extent-lay.png"><img alt="extent-lay" src="../_images/extent-lay.png" style="width: 2em;" /></a>)</p></li>
+</ul>
+<a class=""
+               data-lightbox="group-74f88816-36cc-47f5-833c-1d744206a099"
+               href="../_images/extent1.png"
+               title=""
+               data-title=""
+               
+               ><img src="../_images/extent1.png"
+                     class=""
+                     width="720px"
+                     height="auto"
+                     alt=""/>
+                </a><section id="extent">
+<h3>Extent<a class="headerlink" href="#extent" title="Permalink to this heading">¶</a></h3>
+</section>
 </section>
 <section id="layers">
 <span id="id4"></span><h2>Layers<a class="headerlink" href="#layers" title="Permalink to this heading">¶</a></h2>

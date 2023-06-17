@@ -54,10 +54,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="before-publishing.html">Before publishing</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Publishing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#publishing-project">Publishing project</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Publishing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="setting-up-project.html">Setting up the project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user-interface.html">User interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html">Sample datasets</a></li>
@@ -98,7 +95,7 @@ If the user is already connected to publication server (see QGIS Gisquick plugin
 green message pane will appear.
 Otherwise, fill in the connection and Gisquick login details. Then click on <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">browser</span></code>.</p>
 <a class=""
-               data-lightbox="group-4147179b-0c61-43e9-bc96-152360f37372"
+               data-lightbox="group-7e30d62e-8b54-46d7-b281-61c544033b29"
                href="../_images/publish-button-51.png"
                title="--sem screenshot Open Browser"
                data-title="--sem screenshot Open Browser"
@@ -108,9 +105,10 @@ Otherwise, fill in the connection and Gisquick login details. Then click on <cod
                      width="300px"
                      height="auto"
                      alt=""/>
-                </a><p>The user’s profile page profile page opens in browser. Click on <code class="docutils literal notranslate"><span class="pre">NEW</span> <span class="pre">PROJECT</span></code>.</p>
+                </a><p>The user’s profile page opens in browser. If you have not published any projects yet, the profile page looks like this,
+if you have, you will see a list of your published projects. For publishing a new project, click on <code class="docutils literal notranslate"><span class="pre">NEW</span> <span class="pre">PROJECT</span></code>.</p>
 <a class=""
-               data-lightbox="group-28cca26e-76cb-4579-984e-d866a1e79437"
+               data-lightbox="group-4f414f31-9bc6-4dd2-9ac4-a1718da9d768"
                href="../_images/gisquick-new-account-041.png"
                title="User's profile page."
                data-title="User's profile page."
@@ -120,7 +118,28 @@ Otherwise, fill in the connection and Gisquick login details. Then click on <cod
                      width="500px"
                      height="auto"
                      alt=""/>
-                </a><div class="admonition important">
+                </a><p>After that, an overview of the project appears. Basic information, such as QGIS project location,
+map projection, units and print templates, and all layers that are about to be published
+are listed in here. It is not possible to make any changes within this step.
+Click the button <code class="docutils literal notranslate"><span class="pre">LOAD</span> <span class="pre">FILES</span></code> and after that, type a project’s name and hit <code class="docutils literal notranslate"><span class="pre">CREATE</span></code>.
+Note that the project name cannot be changed later.</p>
+<p>–screenshot LOAD FILES</p>
+<p>–screenshot Project name - CREATE</p>
+<p>The last obligatory step before publishing is setting the project title.
+After setting the title, the project is ready to be published by clicking the button <code class="docutils literal notranslate"><span class="pre">PUBLISH</span></code>
+in the top right corner of Gisquick web interface. Before publishing, project is marked as
+<code class="docutils literal notranslate"><span class="pre">STAGED</span></code>, after publishing it is marked as <code class="docutils literal notranslate"><span class="pre">PUBLISHED</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Project name may or may not be the same as project title. Unlike the project name,
+the project title can be changed in this <strong>General</strong> section of Gisquick web interace.</p>
+</div>
+<p>–screenshot cervene PUBLISH + staged/published</p>
+<p>See section <a class="reference internal" href="setting-up-project.html#setting-up-project"><span class="std std-ref">Setting up the project</span></a> for further information about all
+the possible settings of a project you are publishing. These settings can be changed before the
+hitting the button <code class="docutils literal notranslate"><span class="pre">PUBLISH</span></code> or after that.</p>
+<p>EDIT ↓</p>
+<div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><a class="reference internal" href="../_images/important.png"><img alt="imp" src="../_images/important.png" style="width: 1.5em;" /></a> When using flat files or file-based databases as
 data stores it is highly recommended to save all the files (data and QGIS
@@ -132,7 +151,7 @@ must be ensured that the server used for publishing will have access
 rights to such data sources.</p>
 </div>
 <a class=""
-               data-lightbox="group-9c2ab468-b600-4d6d-b97c-b2fc2ac994f6"
+               data-lightbox="group-13e38190-cb54-478b-aa64-c67d6076cb19"
                href="../_images/different-folders-error1.png"
                title="Error warning when different source paths are used."
                data-title="Error warning when different source paths are used."
@@ -142,124 +161,7 @@ rights to such data sources.</p>
                      width="100%"
                      height="auto"
                      alt=""/>
-                </a><p id="uploading-project">EDIT ↓</p>
-<p>After succesful check-in to the Gisquick server, the project is screened
-in user’s experimental publish window. Notice, that the Gisquick 2
-icon stays active in QGIS until the user clicks on it again and interrupts the
-connection with the server.</p>
-<a class=""
-               data-lightbox="group-9da3850c-ad61-4cb3-80c4-f8b93039c0ed"
-               href="../_images/publish-button-61.png"
-               title="Successful check-in to the Gisquick server and loaded sample project."
-               data-title="Successful check-in to the Gisquick server and loaded sample project."
-               
-               ><img src="../_images/publish-button-61.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><p>The first section called <code class="docutils literal notranslate"><span class="pre">CHECK-IN</span></code> consists of two tabs and represents
-an overview which is designed to easily check on loaded layers. It is not
-possible to make any changes within these tabs. Eventual corrections
-could be made back in QGIS.</p>
-<p>First tab <code class="docutils literal notranslate"><span class="pre">General</span></code> includes some fundamental information about user’s
-project, e.g. map projection, units, predefined scales or print templates.
-Second tab <code class="docutils literal notranslate"><span class="pre">Layers</span></code> contains a list of layers with additional information.</p>
-<p>When the project is checked and ready, proceed to the <code class="docutils literal notranslate"><span class="pre">Upload</span></code> section.
-Two windows will split the screen: local project files are listed in the left,
-intended server folder appears in the right one. Click on <code class="docutils literal notranslate"><span class="pre">UPLOAD</span> <span class="pre">FILES</span></code> button.</p>
-<a class=""
-               data-lightbox="group-a2292e62-573c-4c1b-aba9-c52200dc9cb1"
-               href="../_images/publish-button-71.png"
-               title="Upload section displays local files and intended server folder."
-               data-title="Upload section displays local files and intended server folder."
-               
-               ><img src="../_images/publish-button-71.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><section id="publishing-project">
-<span id="releasing-project"></span><span id="preparation-in-qgis"></span><h2>Publishing project<a class="headerlink" href="#publishing-project" title="Permalink to this heading">¶</a></h2>
-<p>EDIT ↓</p>
-<p>This chapter follows up on chapter <a class="reference internal" href="../index.html#chapter-2"><span class="std std-ref">2. Publishing</span></a> and represents last steps of project publishing.</p>
-<p>A section called <code class="docutils literal notranslate"><span class="pre">SETTINGS</span></code> is displayed. There are a few
-options in the settings window. It is possible to load map canvas using the
-map button (<code class="docutils literal notranslate"><span class="pre">1</span></code>). Use the delete button (<code class="docutils literal notranslate"><span class="pre">2</span></code>) in case of removing the whole project.
-For logging out find the top right button (<code class="docutils literal notranslate"><span class="pre">3</span></code>).
-Furthermore, it is possible to change the project title (<code class="docutils literal notranslate"><span class="pre">4</span></code>), set the
-rate of authentication (<code class="docutils literal notranslate"><span class="pre">5</span></code>) or edit map extent setting (<code class="docutils literal notranslate"><span class="pre">6</span></code>). There are few
-possibilities how to edit map extent (<code class="docutils literal notranslate"><span class="pre">7</span></code>). The first is to fill in the
-desired coordinates into the frames. The second possibility, the map extent can be edited
-manually by drawing a delimiting rectangle area ina  map. The last option is to
-use the extent of one imported layer or extent of all of them.
-Setting map scales is possible in the left box (<code class="docutils literal notranslate"><span class="pre">8</span></code>). Executed changes are
-reflected in map preview (<code class="docutils literal notranslate"><span class="pre">9</span></code>).</p>
-<p>all possible project settings/possibilities are described further in chapetr??</p>
-<a class=""
-               data-lightbox="group-5943799c-443f-4c4f-9943-896fe833bcbc"
-               href="../_images/ui-project-setting1.png"
-               title="Project setting."
-               data-title="Project setting."
-               
-               ><img src="../_images/ui-project-setting1.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><a class=""
-               data-lightbox="group-9a300f1b-6a17-4f60-94d1-ea375e3ae620"
-               href="../_images/ui-extent-setting1.png"
-               title="Couple of ways how to set map extent."
-               data-title="Couple of ways how to set map extent."
-               
-               ><img src="../_images/ui-extent-setting1.png"
-                     class=""
-                     width="200px"
-                     height="auto"
-                     alt=""/>
-                </a><p>Check the subsection Layers for advanced adjustment of layers. The base layer
-can be chosen in the left box (a blank base map is default). Within the right
-box, it is possible to specify which layers will be published or hidden (or both
-which means that the layer will be published but turned off when the project is opened).</p>
-<a class=""
-               data-lightbox="group-595bd029-81db-481f-8326-dad4e238f698"
-               href="../_images/ui-layers-setting1.png"
-               title="Layers setting."
-               data-title="Layers setting."
-               
-               ><img src="../_images/ui-layers-setting1.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><p>The last subsection is dedicated to topics. Creating or removing a topic is enabled.
-Select a topic to see involved features which can be subsequently modified.</p>
-<a class=""
-               data-lightbox="group-ec7deaec-902a-4dcb-8168-a00207b40523"
-               href="../_images/ui-topics-setting1.png"
-               title="Subsection Topics. Add and remove button are highlighted in red square."
-               data-title="Subsection Topics. Add and remove button are highlighted in red square."
-               
-               ><img src="../_images/ui-topics-setting1.png"
-                     class=""
-                     width="100%"
-                     height="auto"
-                     alt=""/>
-                </a><p>In the very last step, hit the update button to save all realized changes and finish the publishing process.</p>
-<a class=""
-               data-lightbox="group-341db45c-6137-4cb8-bb6c-e33c85523df3"
-               href="../_images/ui-update1.png"
-               title="Update button is highlighted in red square."
-               data-title="Update button is highlighted in red square."
-               
-               ><img src="../_images/ui-update1.png"
-                     class=""
-                     width="250px"
-                     height="auto"
-                     alt=""/>
-                </a></section>
-</section>
+                </a><span class="target" id="uploading-project"></span></section>
 
 
            </div>

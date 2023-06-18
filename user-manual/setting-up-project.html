@@ -58,10 +58,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up the project</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#general">General</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#files">Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#map">Map</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#extent">Extent</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#map">Map</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#layers">Layers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#topics">Topics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#permissions">Permissions</a></li>
@@ -112,7 +109,7 @@ for more information check <a class="reference internal" href="before-publishing
 <p>In the <strong>General</strong> section, the user can check summary information about the project. These are list of layers,
 their queryability, CRS, provider, source or information regarding WFS.</p>
 <a class=""
-               data-lightbox="group-a8af3994-7041-48cb-ac18-d78e66a07eb4"
+               data-lightbox="group-4ff3de4e-1497-4061-b2f4-97d4cbc68e22"
                href="../_images/general1.png"
                title=""
                data-title=""
@@ -129,7 +126,7 @@ their queryability, CRS, provider, source or information regarding WFS.</p>
 <p>The user is able to view all files uploaded to the server within the project in the <strong>Files</strong> section.
 Using the right-click on specific file, it is possible to download it, save the link or delete it.</p>
 <a class=""
-               data-lightbox="group-fd781659-a232-4f60-a715-c75b95408318"
+               data-lightbox="group-78ae9101-dec5-4723-8a2b-6623a1920dc7"
                href="../_images/files1.png"
                title=""
                data-title=""
@@ -147,7 +144,7 @@ Using the right-click on specific file, it is possible to download it, save the 
 <p><strong>Scales</strong> settings enables to define depths of zoom. By clicking on ADD button, user adds new scale, with REMOVE button
 marked scale will be removed. Double-click on particular scale allows to redefine it.</p>
 <a class=""
-               data-lightbox="group-c87ced5b-b3de-4a16-8066-7668b71a7421"
+               data-lightbox="group-3e44161c-3012-41fe-b79a-941afcdc4244"
                href="../_images/map-scales1.png"
                title=""
                data-title=""
@@ -164,22 +161,62 @@ marked scale will be removed. Double-click on particular scale allows to redefin
 <li><p>by taking over from defined layer (accessed by <a class="reference internal" href="../_images/extent-lay.png"><img alt="extent-lay" src="../_images/extent-lay.png" style="width: 2em;" /></a>)</p></li>
 </ul>
 <a class=""
-               data-lightbox="group-4151046d-587d-4a38-af69-cf415acd7e79"
+               data-lightbox="group-5101e885-2606-4569-8674-3358c47d7539"
                href="../_images/extent1.png"
                title=""
                data-title=""
                
                ><img src="../_images/extent1.png"
                      class=""
-                     width="720px"
+                     width="100%"
                      height="auto"
                      alt=""/>
-                </a><section id="extent">
-<h3>Extent<a class="headerlink" href="#extent" title="Permalink to this heading">¶</a></h3>
-</section>
+                </a><p>The Project <strong>Thumbnail</strong> is a useful tool when it comes to orientation among other projects on the profile page.
+Two methods are available for setting the thumbnail:</p>
+<ul class="simple">
+<li><p>uploading from a file (accessed by <a class="reference internal" href="../_images/thumbnail-1.png"><img alt="thumbnail-1" src="../_images/thumbnail-1.png" style="width: 2em;" /></a>)</p></li>
+<li><p>defining the extent and layer to appear on the thumbnail (accessed by <a class="reference internal" href="../_images/thumbnail-2.png"><img alt="thumbnail-2" src="../_images/thumbnail-2.png" style="width: 2em;" /></a>)</p></li>
+</ul>
+<a class=""
+               data-lightbox="group-8d4ce0f2-9a0a-4f42-b23d-7fe02afc06e5"
+               href="../_images/thumbnail1.png"
+               title=""
+               data-title=""
+               
+               ><img src="../_images/thumbnail1.png"
+                     class=""
+                     width="220px"
+                     height="auto"
+                     alt=""/>
+                </a><hr class="docutils" />
 </section>
 <section id="layers">
 <span id="id4"></span><h2>Layers<a class="headerlink" href="#layers" title="Permalink to this heading">¶</a></h2>
+<p>Within the <strong>Layers</strong> section, users are granted the ability to manage layers. With a vast selection of options,
+users can tailor layers to their exact needs.</p>
+<p><strong>Base layers</strong> on the left half of the screen can be defined by dragging and dropping an arbitrary layer from
+the right half. The behavior of these layers in the web map is described in <a class="reference internal" href="user-interface.html#content-management"><span class="std std-ref">Content management</span></a>.</p>
+<p><strong>Flags</strong>, accessed by <a class="reference internal" href="../_images/layers-1.png"><img alt="layers-1" src="../_images/layers-1.png" style="width: 6em;" /></a> or in settings <a class="reference internal" href="../_images/layers-settings.png"><img alt="layers-settings" src="../_images/layers-settings.png" style="width: 2em;" /></a>:</p>
+<ul class="simple">
+<li><p><strong>Excluded</strong> layers are not in the layers content tab, neither in the map.</p></li>
+<li><p><strong>Hidden</strong> layers are not shown in the layers content tab, but they are in the map.</p></li>
+<li><p><strong>Renderless</strong> layers are shown in the layers content tab, but are not in the map.</p></li>
+<li><p><strong>Queryable</strong> enable to display attribute table.</p></li>
+<li><p><strong>Editable</strong> enable editing of layer.</p></li>
+<li><p><strong>Exportable</strong> enable to download attribute table. At the same time have to be Quaryable.</p></li>
+</ul>
+<a class=""
+               data-lightbox="group-04b1a749-f39d-460d-b260-5ffad7be3a5a"
+               href="../_images/layers1.gif"
+               title=""
+               data-title=""
+               
+               ><img src="../_images/layers1.gif"
+                     class=""
+                     width="100%"
+                     height="auto"
+                     alt=""/>
+                </a><p><strong>ZBEZNE VYTVORENY GIF - PREDELAT???</strong></p>
 <hr class="docutils" />
 </section>
 <section id="topics">
@@ -199,7 +236,7 @@ Save all changes by using the <code class="docutils literal notranslate"><span c
 widget of the web map.</p>
 </div>
 <a class=""
-               data-lightbox="group-b218244b-3cd1-4dd2-9c8e-ee2d34268567"
+               data-lightbox="group-67e01c93-6024-41e3-8b27-f055519bde8f"
                href="../_images/topics1.png"
                title=""
                data-title=""
@@ -223,7 +260,7 @@ The Permissions can be:</p>
 <li><p><strong>Selected Users</strong> - the author gives permissions to project to selected users by filling in their Gisquick usernames.</p></li>
 </ul>
 <a class=""
-               data-lightbox="group-8a6facc7-40bf-414e-a707-693b85379b1d"
+               data-lightbox="group-c3aa7045-4f9b-47da-bcec-6011b6247cfa"
                href="../_images/permissions-basic1.png"
                title="Basic permissions to project."
                data-title="Basic permissions to project."
@@ -237,7 +274,7 @@ The Permissions can be:</p>
 However, there is also an advanced setting that is available by checking
 the <strong>Multiple roles permissions</strong> option.</p>
 <a class=""
-               data-lightbox="group-d76e28fb-3cc2-44ce-9365-aa526d5bad92"
+               data-lightbox="group-4aa84951-5a89-4f4a-a8cb-cbc6f08223df"
                href="../_images/permissions-advanced1.png"
                title="Advanced permissions to project."
                data-title="Advanced permissions to project."
